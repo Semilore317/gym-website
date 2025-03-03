@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import {FaDumbbell} from 'react-icons/fa'
 import {MdMenu} from 'react-icons/md'
 import {PiShoppingCartThin} from "react-icons/pi";
+import ResponsiveMenu from "./ResponsiveMenu.jsx";
 
 const Navbar = () =>{
     const [open, setOpen] = React.useState(false);
@@ -39,14 +40,14 @@ const Navbar = () =>{
                     <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block">Login</button>
                 </div>
                 {/*Mobile hamburger Menu section*/}
-                    <div className="md:hidden cursor-pointer" onCLick={() => setOpen(!open)}>
+                    <div className="cursor-pointer" onClick={() => setOpen(!open)}>
                         <MdMenu className="text-4xl"/>
                     </div>
             </div>
         </nav>
 
         {/*Mobile sidebar section*/}
-        
+        <ResponsiveMenu open={open}/>
     </>
 }
 
