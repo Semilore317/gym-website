@@ -2,7 +2,9 @@ import React from 'react';
 import { GrYoga } from 'react-icons/gr';
 import { MdFitnessCenter } from "react-icons/md";
 import { FaRunning } from 'react-icons/fa';
-//import motion from 'framer-motion';
+import { motion } from 'framer-motion';
+import {SlideLeft} from "../../utility/animation.js"
+import {FadeUp} from "../../utility/animation.js";
 
 const EquipmentData = [
     {
@@ -44,11 +46,15 @@ const Equipment = () => {
                     {
                         EquipmentData.map((item) =>{
                             return (
-                                <div className="space-y-4 p-6 bg-[#fbfbfb] hover:bg-white rounded-xl hover:shadow">
+                                <motion.div variants={FadeUp(item.delay)}
+                                            initial={{y:100, opacity:0}}
+                                            animate="visible"
+                                            key={item.id}
+                                            className="space-y-4 p-6 bg-[#fbfbfb] hover:bg-white rounded-xl hover:shadow-[0_0_22px_0_rgba(0,0,0,0.15)]">
                                     <div className="text-4xl text-secondary">{item.icon}</div>
                                     <p className="text-2xl font-semibold">{item.title}</p>
                                     <p className="text-gray-500">{item.desc}</p>
-                                </div>
+                                </motion.div>
                             )
                         })
                     }

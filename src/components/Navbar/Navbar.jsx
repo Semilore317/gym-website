@@ -37,7 +37,9 @@ const Navbar = () =>{
                     <button className="text-2xl hover:bg=primary hover:text-secondary rounded-full p-2 duration-200">
                         <PiShoppingCartThin/>
                     </button>
-                    <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block">Login</button>
+                    <button className=" hover:px-5 hover:py-1 rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block">
+                        <p className="text-primary font-semibold hover:text-white">Login</p>
+                    </button>
                 </div>
                 {/*Mobile hamburger Menu section*/}
                     <div className="cursor-pointer p-5 lg:hidden" onClick={() => setOpen(!open)}>
