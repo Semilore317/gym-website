@@ -2,6 +2,7 @@ import React from 'react';
 import { GrYoga } from 'react-icons/gr';
 import { MdFitnessCenter } from "react-icons/md";
 import { FaRunning } from 'react-icons/fa';
+//import motion from 'framer-motion';
 
 const EquipmentData = [
     {
@@ -31,8 +32,27 @@ const EquipmentData = [
 const Equipment = () => {
     return(
         <div>
-            <div className="container">
-                
+            <div className="container py-24">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 font-outfit">
+                    <div className="space-y-4 p-6">
+                        <h1 className="text-3xl md:text-4xl font-bold">What We Offer</h1>
+                        <p className="text-gray-500">
+                            We provide top-tier fitness facilities, expert-led classes, and personalized training to help you achieve your goals. Whether it’s strength training, cardio, or yoga, our supportive environment ensures a rewarding fitness journey.
+                        </p>
+                    </div>
+                    {/*map data to the cards*/}
+                    {
+                        EquipmentData.map((item) =>{
+                            return (
+                                <div className="space-y-4 p-6 bg-[#fbfbfb] hover:bg-white rounded-xl hover:shadow">
+                                    <div className="text-4xl text-secondary">{item.icon}</div>
+                                    <p className="text-2xl font-semibold">{item.title}</p>
+                                    <p className="text-gray-500">{item.desc}</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
