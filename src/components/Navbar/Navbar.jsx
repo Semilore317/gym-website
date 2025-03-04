@@ -19,7 +19,7 @@ const Navbar = () =>{
                 </div>
                 {/*Menu Section*/}
                 <div className="hidden md:block">
-                    <ul className="flex items-center gap-6 text-gray-600">
+                    <ul className="flex items-center gap-6 md:gap-2 text-gray-600">
                         {NavbarMenu.map((item) =>{
                             return <li key={item.id}>
                                 <a href={item.link} className="inline-block py-1 px-3 hover:text-primary font-semibold">
@@ -40,7 +40,7 @@ const Navbar = () =>{
                     <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block">Login</button>
                 </div>
                 {/*Mobile hamburger Menu section*/}
-                    <div className="cursor-pointer" onClick={() => setOpen(!open)}>
+                    <div className="cursor-pointer p-5 lg:hidden" onClick={() => setOpen(!open)}>
                         <MdMenu className="text-4xl"/>
                     </div>
             </div>

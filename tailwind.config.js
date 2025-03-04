@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+        fontFamily: {
+            outfit: ["Outfit", "serif"],
+        },
         colors: {
             primary: "#ff8901",
             secondary: "#fb923c",
