@@ -4,7 +4,11 @@ import Hero from "./components/Hero/Hero.jsx"
 import Equipment from "./components/Equipment/Equipment.jsx"
 import Banner from "./components/Banner/Banner.jsx"
 import TabComp from "./components/Tab/TabComp.jsx"
+import Testimonial from "./components/Testimonial/Testimonial.jsx"
 import BgImage from "./assets/bg.png"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 import Img1 from "./assets/2.png"
 import Img2 from "./assets/3.png"
@@ -43,6 +47,7 @@ function App() {
         <Banner {...BannerData} />
         <TabComp />
         <Banner {...BannerData2} />
+        <Testimonial />
     </div>
 }
 
