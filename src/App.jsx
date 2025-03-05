@@ -6,6 +6,7 @@ import Banner from "./components/Banner/Banner.jsx"
 import TabComp from "./components/Tab/TabComp.jsx"
 import Testimonial from "./components/Testimonial/Testimonial.jsx"
 import Banner2 from "./components/Banner/Banner2.jsx"
+import Footer from "./components/Footer/Footer.jsx"
 import BgImage from "./assets/bg.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -39,7 +40,8 @@ const bgStyle = {
 }
 
 function App() {
-  return <div className="overflow-x-hidden">
+  return <>
+    <div className="overflow-x-hidden">
         <div style={bgStyle}>
           <Navbar />
           <Hero />
@@ -51,6 +53,8 @@ function App() {
         <Testimonial />
         <Banner2 />
     </div>
+    <Footer />
+  </>
 }
 
 export default App
