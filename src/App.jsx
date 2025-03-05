@@ -5,6 +5,7 @@ import Equipment from "./components/Equipment/Equipment.jsx"
 import Banner from "./components/Banner/Banner.jsx"
 import TabComp from "./components/Tab/TabComp.jsx"
 import Testimonial from "./components/Testimonial/Testimonial.jsx"
+import Banner2 from "./components/Banner/Banner2.jsx"
 import BgImage from "./assets/bg.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -48,6 +49,7 @@ function App() {
         <TabComp />
         <Banner {...BannerData2} />
         <Testimonial />
+        <Banner2 />
     </div>
 }
 
