@@ -11,7 +11,7 @@ const Footer = () => {
                         {/* Logo */}
                         <div className="flex justify-center items-center gap-1 text-3xl">
                             <FaDumbbell className="h-6 w-6" />
-                            <p>NEXT</p>
+                            <p>KAIJU</p>
                             <p className="text-primary">GYM</p>
                         </div>
 

@@ -1,5 +1,5 @@
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import {FadeUp} from "../../utility/animation.js";
 
 const Banner = ({image, title, subtitle, link}) => {

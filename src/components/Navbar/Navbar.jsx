@@ -1,10 +1,11 @@
 import React from "react";
 import {NavbarMenu} from "../../mockData/data.js"
 import { CiSearch } from "react-icons/ci";
-import {FaDumbbell} from 'react-icons/fa'
+
 import {MdMenu} from 'react-icons/md'
 import {PiShoppingCartThin} from "react-icons/pi";
 import ResponsiveMenu from "./ResponsiveMenu.jsx";
+import kaijuIcon from "../../assets/tabs/img.png"
 
 const Navbar = () =>{
     const [open, setOpen] = React.useState(false);
@@ -13,9 +14,9 @@ const Navbar = () =>{
             <div className="container flex justify-between items-center py-8">
                 {/*Logo Section*/}
                 <div className="text-2xl flex items-center gap-2 font-bold uppercase">
-                    <FaDumbbell />
-                    <p>Next</p>
-                    <p className="text-secondary">Gym</p>
+
+                    <img src={kaijuIcon} alt="icon" className="w-5 h-5" />
+                    <p className="text-black">Gym</p>
                 </div>
                 {/*Menu Section*/}
                 <div className="hidden md:block">
